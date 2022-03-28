@@ -7,8 +7,15 @@ import (
 
 func main() {
 	q := 34.0
-	r := 8.0
 
-	s := math.Mod(q, r)
-	fmt.Println(s)
+	fmt.Println(isEven(q))
+}
+
+func isEven(x float64) bool {
+	if math.Mod(x, 2) == 0 {
+		return true
+	} else {
+		return false
+	}
+
 }
